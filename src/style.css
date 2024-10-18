@@ -30,6 +30,7 @@ body {
   margin: 10% auto;
   color: #ff8f00;
   padding: 20px;
+  opacity: 0;
 }
 #quiz {
   font-size: 30px;
@@ -51,4 +52,10 @@ body {
   height: 35px;
   border: none;
   border-radius: 30rem;
+}
+
+.start {
+  background-color: #009688;
+  margin-left: 45%;
+  font-size: 20px;
 }

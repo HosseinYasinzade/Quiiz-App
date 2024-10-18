@@ -3,7 +3,8 @@ const quiz = document.querySelector("#quiz");
 const answer = document.querySelector("#user-answer");
 const btn = document.querySelector(".submit");
 const sumery = document.querySelector(".sumery");
-
+const start = document.querySelector(".start");
+const card = document.querySelector(".card");
 let corent_score = 0;
 let corent_quiz = 0;
 
@@ -22,8 +23,6 @@ const generateQuiz = async function () {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
 
-      quiz.textContent = quizData[corent_quiz].question;
-
       ans = answer.value.trim();
       if (ans) {
         sumery.textContent = "";
@@ -41,6 +40,7 @@ const generateQuiz = async function () {
           btn.disabled = true;
         }
         corent_quiz += 1;
+        quiz.textContent = quizData[corent_quiz].question;
       } else {
         sumery.textContent = "Please Enter valid value";
         sumery.style.color = "red";
@@ -53,4 +53,7 @@ const generateQuiz = async function () {
   }
 };
 
-generateQuiz();
+start.addEventListener("click", function () {
+  card.style.opacity = "1";
+  generateQuiz();
+});
