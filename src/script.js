@@ -49,7 +49,7 @@ const generateQuiz = async function () {
       answer.value = "";
     });
   } catch (error) {
-    console.error(err.message);
+    console.error(error.message);
   }
 };
 
