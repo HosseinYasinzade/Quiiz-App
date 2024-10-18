@@ -35,6 +35,11 @@ const generateQuiz = async function () {
           score.textContent = `score = ${(corent_score += 1)}`;
         }
 
+        if (corent_quiz === quizData.length - 1) {
+          quiz.textContent = "finish";
+          answer.style.display = "none";
+          btn.disabled = true;
+        }
         corent_quiz += 1;
       } else {
         sumery.textContent = "Please Enter valid value";
