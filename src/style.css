@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: #ff8f00;
+  color: #fff;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.score {
+  font-size: 25px;
+  font-weight: bold;
+}
+.card {
+  background-color: #009688;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 200px;
+  margin: 10% auto;
+  color: #ff8f00;
+}
+#quiz {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+#user-answer {
+  width: 75%;
+  height: 35px;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+  border-radius: 30rem;
+}
