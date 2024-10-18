@@ -25,13 +25,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 200px;
   margin: 10% auto;
   color: #ff8f00;
+  padding: 20px;
 }
 #quiz {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 50px;
 }
 #user-answer {
