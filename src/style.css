@@ -35,10 +35,19 @@ body {
   margin-bottom: 50px;
 }
 #user-answer {
-  width: 75%;
+  width: 70%;
   height: 35px;
   border: none;
   padding: 0 10px;
   outline: none;
+  border-radius: 30rem;
+  font-size: 20px;
+}
+.submit {
+  background-color: #ff8f00;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border: none;
   border-radius: 30rem;
 }
