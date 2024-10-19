@@ -5,8 +5,8 @@ const btn = document.querySelector(".submit");
 const sumery = document.querySelector(".sumery");
 const start = document.querySelector(".start");
 const card = document.querySelector(".card");
-let corent_score = 0;
-let corent_quiz = 0;
+let corentScore = 0;
+let corentQuiz = 0;
 
 const generateQuiz = async function () {
   try {
@@ -18,7 +18,7 @@ const generateQuiz = async function () {
 
     console.log(quizData);
 
-    quiz.textContent = quizData[corent_quiz].question;
+    quiz.innerHTML = quizData[corentQuiz].question;
 
     btn.addEventListener("click", function (e) {
       e.preventDefault();
@@ -29,18 +29,18 @@ const generateQuiz = async function () {
 
         if (
           ans.toLowerCase() ===
-          quizData[corent_quiz].incorrect_answers[0].toLowerCase()
+          quizData[corentQuiz].incorrect_answers[0].toLowerCase()
         ) {
-          score.textContent = `score = ${(corent_score += 1)}`;
+          score.textContent = `score = ${(corentScore += 1)}`;
         }
 
-        if (corent_quiz === quizData.length - 1) {
+        if (corentQuiz === quizData.length - 1) {
           quiz.textContent = "finish";
           answer.style.display = "none";
           btn.disabled = true;
         }
-        corent_quiz += 1;
-        quiz.textContent = quizData[corent_quiz].question;
+        corentQuiz += 1;
+        quiz.innerHTML = quizData[corentQuiz].question;
       } else {
         sumery.textContent = "Please Enter valid value";
         sumery.style.color = "red";
