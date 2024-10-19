@@ -29,7 +29,7 @@ const generateQuiz = async function () {
 
         if (
           ans.toLowerCase() ===
-          quizData[corentQuiz].incorrect_answers[0].toLowerCase()
+          quizData[corentQuiz].correct_answer.toLowerCase()
         ) {
           score.textContent = `score = ${(corentScore += 1)}`;
         }
